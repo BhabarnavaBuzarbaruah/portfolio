@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA & Web Development Portfolio | Bhabarnava Buzarbaruah</title>
+  <style>
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #222;
+      --header-text: white;
+      --btn-bg: #007acc;
+      --btn-text: white;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #f5f5f5;
+      --header-bg: #1e1e1e;
+      --header-text: #f5f5f5;
+      --btn-bg: #2196f3;
+      --btn-text: #ffffff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: var(--header-text);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid white;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+
+    .toggle-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <button onclick="toggleTheme()">Toggle Light/Dark</button>
+  </div>
+
+  <header>
+    <a href="https://www.linkedin.com/in/bhabarnavabuzarbaruah1/" target="_blank">
+      <img src="profile.jpg" alt="Profile Picture" />
+    </a>
+    <h1>Bhabarnava Buzarbaruah</h1>
+    <p>Aspiring SDE | DSA in Java | Full-Stack Web Development | Preparing for FAANG</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>I am currently focused on mastering Data Structures & Algorithms in Java, and I'm also starting my journey in Full-Stack Web Development. My goal is to become a Software Development Engineer at a top tech company like Amazon or Microsoft. I'm passionate about building efficient solutions and solving real-world problems through code.</p>
+
+    <h2 class="section-title">DSA Preparation</h2>
+    <ul>
+      <li>300+ LeetCode problems solved</li>
+      <li>Practicing daily on GeeksforGeeks & Codeforces</li>
+      <li>Topics: Arrays, Strings, Trees, Graphs, DP, Recursion</li>
+    </ul>
+    <p><a class="btn" href="https://github.com/BhabarnavaBuzarbaruah/dsa-interview-prep" target="_blank">View DSA Repo</a></p>
+
+    <h2 class="section-title">Resume</h2>
+    <p><a class="btn" href="#">Download Resume (Coming Soon)</a></p>
+
+    <h2 class="section-title">GitHub Stats</h2>
+    <img src="https://github-readme-stats.vercel.app/api?username=BhabarnavaBuzarbaruah&show_icons=true&theme=default" alt="GitHub Stats">
+
+    <h2 class="section-title">Contact</h2>
+    <p>Email: <a href="mailto:bhabarnavabuzarbaruah@gmail.com">bhabarnavabuzarbaruah@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/BhabarnavaBuzarbaruah" target="_blank">@BhabarnavaBuzarbaruah</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhabarnavabuzarbaruah1/" target="_blank">linkedin.com/in/bhabarnavabuzarbaruah1</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bhabarnava Buzarbaruah. All rights reserved. | <a href="https://www.linkedin.com/in/bhabarnavabuzarbaruah1/" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", currentTheme === "dark" ? "light" : "dark");
+    }
+  </script>
+</body>
+</html>
