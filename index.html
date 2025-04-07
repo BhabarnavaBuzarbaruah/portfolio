@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DSA & Web Development Portfolio | Bhabarnava Buzarbaruah</title>
+  <title>Bhabarnava Buzarbaruah | DSA & Web Development</title>
   <style>
     :root {
       --bg-color: #f4f4f4;
@@ -21,6 +21,10 @@
       --header-text: #f5f5f5;
       --btn-bg: #2196f3;
       --btn-text: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -67,6 +71,7 @@
       padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
+      margin-top: 10px;
     }
 
     footer {
@@ -77,9 +82,63 @@
     }
 
     .toggle-container {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+    }
+
+    .toggle-container button {
+      padding: 6px 12px;
+      border: none;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.95rem;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        font-size: 0.95rem;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 15px;
+      }
+
+      .toggle-container button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -119,7 +178,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Bhabarnava Buzarbaruah. All rights reserved. | </p>
+    <p>&copy; 2025 Bhabarnava Buzarbaruah. All rights reserved. |<a href="https://www.linkedin.com/"> linkedin</a></p>
   </footer>
 
   <script>
